@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/USER/Downloads/Untitled-1.html#tentang -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wisata Gua Bhuta - Desa Jirek Mas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #234E52;
+    background: #E9F0F0;
+  }
+
+  header {
+    background: #176659;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.8rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #F5A623;
+  }
+
+  .hero {
+    background: url('GHUA BHUTA.jpg') center/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 3rem;
+    color: rgb(14, 12, 12);
+    text-shadow: 1px 1px 5px rgb(200, 213, 216);
+    position: relative;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(23, 102, 89, 0.248);
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+    animation: slideIn 1s ease forwards;
+  }
+
+  @keyframes slideIn {
+    from {opacity: 0; transform: translateX(-40px);}
+    to {opacity:1; transform: translateX(0);}
+  }
+
+  .hero-content h2 {
+    font-size: 3.2rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .btn-visit {
+    background: #F5A623;
+    color: #234E52;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(245,166,35,0.6);
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .btn-visit:hover {
+    background: #d28c19;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 3rem auto 6rem auto;
+    padding: 0 2rem;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  section h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #176659;
+    border-left: 5px solid #F5A623;
+    padding-left: 0.75rem;
+  }
+
+  section p {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: #000000;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .card h4 {
+    margin: 0.5rem 0 1rem 0;
+    color: #176659;
+    font-weight: 700;
+  }
+
+  .testimonials {
+    background: #176659;
+    color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+  .testimonial-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .testimonial-item p {
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .testimonial-author {
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: #F5A623;
+  }
+
+  footer {
+    background: #234E52;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: #F5A623;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2.3rem;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav {
+      margin-top: 0.6rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Wisata Gua Bhuta</h1>
+  <nav>
+    <a href="file:///C:/Users/USER/Downloads/Untitled-1.html#tentang">Tentang</a>
+    <a href="file:///C:/Users/USER/Downloads/Untitled-1.html#atraksi">Atraksi</a>
+    <a href="file:///C:/Users/USER/Downloads/Untitled-1.html#info-kunjungan">Info Kunjungan</a>
+    <a href="file:///C:/Users/USER/Downloads/Untitled-1.html#testimoni">Testimoni</a>
+  </nav>
+</header>
+
+<section class="hero" role="banner" aria-label="Sambutan Wisata Gua Bhuta">
+  <div class="hero-content">
+    <h2>JELAJAHI KEINDAHAN GUA BHUTA</h2>
+    <p>TEMUKAN KE INDAHAN GUA BHUTA DI DESA JIREK MAS – DESTINASI WISATA YANG MEMIKAT HATI.</p>
+    <button class="btn-visit" onclick="document.getElementById(&#39;info-kunjungan&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">Rencanakan Kunjungan</button>
+  </div>
+</section>
+
+<main>
+  <section id="tentang" tabindex="0" aria-label="Tentang Gua Bhuta">
+    <h3>Tentang Gua Bhuta</h3>
+    <p>Gua Butha adalah situs pertapaan dari akhir masa Kerajaan Majapahit abad ke-13–14 yang terletak di cerukan tebing batu. Nama "Butha" berarti raksasa dalam Bahasa Madura, sesuai dengan relief wajah raksasa yang mencolok—bermata lebar, bertaring, dan berkuku tajam—yang memberi kesan mistis dan unik</p>
+  </section>
+
+  <section id="atraksi" tabindex="0" aria-label="Atraksi Wisata Gua Bhuta dan Desa Jirek Mas">
+    <h3>Atraksi</h3>
+    <div class="grid">
+      <article class="card" aria-label="Formasi batu kapur yang menakjubkan">
+        <img src="./Wisata Gua Bhuta - Desa Jirek Mas_files/download.jpeg" alt="Formasi batu kapur indah di dalam Gua Bhuta">
+        <h4>Formasi Batu Alam Menakjubkan</h4>
+        <p>Kagumi keindahan alam yang terbentuk selama ribuan tahun dengan stalaktit dan stalagmit yang menghiasi gua ini.</p>
+      </article>
+      <article class="card" aria-label="Warisan budaya Desa Jirek Mas">
+        <img src="./Wisata Gua Bhuta - Desa Jirek Mas_files/GHUA BHUTA-55.jpeg">
+        <h4>Warisan Budaya</h4>
+        <p>Di sisi Utara gua, terdapat relief-relief lain yang penuh makna, diduga terkait ritual keagamaan. Gua ini mencerminkan perpaduan antara seni, spiritualitas, dan kepercayaan masyarakat pada masa akhir Majapahit.</p>
+      </article>
+      <article class="card" aria-label="Jalur alam di sekitar desa">
+        <img src="./Wisata Gua Bhuta - Desa Jirek Mas_files/WhatsApp Image 2025-05-20 at 01.24.17 (1).jpeg" alt="Jalur alam yang asri dekat Gua Bhuta">
+        <h4>Jalur Alam</h4>
+        <p>Berjalan-jalan menikmati suasana damai di jalur-jalur di sekitar gua yang dikelilingi lanskap alam yang menawan.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="info-kunjungan" tabindex="0" aria-label="Informasi Kunjungan">
+    <h3>Info Kunjungan</h3>
+    <p>Berikut informasi penting untuk merencanakan kunjungan Anda:</p>
+    <ul>
+      <li><strong>Jam Buka:</strong> 08.00 - 17.00 setiap hari</li>
+      <li><strong>Akses:</strong> Dari Jalan Poros Sekitaran 10 Menit dengan jalan kaki.</li>
+      <li><strong>Tour Guide:</strong> Tersedia jasa pemandu lokal yang berpengalaman.</li>
+      <li><strong>Fasilitas:</strong> Area parkir, serta pusat informasi dengan souvenir khas desa Jirek Mas.</li>
+    </ul>
+    <p>Untuk reservasi dan informasi lebih lanjut, hubungi: <a href="mailto:info@guabhuta.id">info@guabhuta.id</a> atau telepon 082338627058</p>
+  </section>
+
+  <section id="testimoni" tabindex="0" aria-label="Testimoni Pengunjung">
+    <h3>Testimoni Pengunjung</h3>
+    <div class="testimonials">
+      <div class="testimonial-item" role="article">
+        <p>"Keindahan alamnya luar biasa! Formasi batu alamnya memukau dan masyarakat desa sangat ramah." – Ani, Indonesia</p>
+        <div class="testimonial-author">– Ani W.</div>
+      </div>
+      <div class="testimonial-item" role="article">
+        <p>"Tempat yang tepat untuk menikmati ketenangan dan budaya yang kaya. Saya sangat merekomendasikan Goa Bhuta!" – John, Amerika Serikat</p>
+        <div class="testimonial-author">– John P.</div>
+      </div>
+      <div class="testimonial-item" role="article">
+        <p>"Pemandu wisatanya sangat informatif dan membuat pengalaman kami semakin berkesan." – Sari, Malaysia</p>
+        <div class="testimonial-author">– Sari L.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Wisata Gua Bhuta - Desa Jirek Mas</p>
+  <p>©Powered by AHUL DESIGN</p>
+  <p>
+    Ikuti kami di 
+    <a href="https://facebook.com/guabhuta" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+    <a href="https://instagram.com/guabhuta" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </p>
+</footer>
+
+
+
+
+</body></html>
